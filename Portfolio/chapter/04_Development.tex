@@ -1,0 +1,26 @@
+The robotic arm which is going to be extended has all DoFs a human arm also has so that it can be controlled using a motion capturing suit. The used motion capturing suit is of the brand Perception Neuron which publishes the raw data using an UDP-stream. From the raw data the angles for every joint are calculated. These calculated angles are transmitted to the respective servomotors. An Arduino Due is used for that. The robotic arm consists of the already mentioned servomotors and 3D printed parts. The actuator can be switched from taskspecific tools to a two sided gripper. 
+In the first stage of development all necessary tasks are collected and structured into topics. The development is structured in these topics:
+- Enabling remote control of the robotic arm
+- Physical setup of arm and camera
+- Transmission from camera to VR glasses
+- Generating the Virtual Environment
+
+%What is needed for a proper setup?
+Remote Control\\
+To avoid sticking at the robotic arm, which causes potential risks (QUELLE), the decision was made to use two computers. One is connected to the robot and the other one is connected to the user. In that way a bad CPU performance which causes the sticking is avoided (QUELLE). ROS is chosen for the remote control because of several reasons (QUELLE)
+Physical Setup\\
+A few considerations have to be made when 
+
+Camera with proper mounting
+VR glasses
+robotic arm
+mocap
+
+Extending the existing robotic arm, which I explained in the previous chapter, in order to get the intended application needs to main decisions to make. Controlling the robotic arm remotely
+Two main decisions have to be made to get the intended application. The connection from the operator to the robot and the connection
+Controlling a robotic system completely remote needs a network setup where the server and the client are communicating over the internet. This Thesis is concentrating on setting up the control mechanism through VR glasses.
+ Why did I chose this setup?
+ 
+ Which benefits do this setup have?
+ 
+

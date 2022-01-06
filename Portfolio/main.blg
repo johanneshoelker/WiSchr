@@ -1,12 +1,14 @@
-This is BibTeX, Version 0.99d (TeX Live 2021/W32TeX)
+This is BibTeX, Version 0.99d (TeX Live 2021/Arch Linux)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
-The top-level auxiliary file: Warum_Mechatronik.aux
+The top-level auxiliary file: main.aux
 The style file: plain.bst
-I found no \citation commands---while reading file Warum_Mechatronik.aux
-I found no \bibdata command---while reading file Warum_Mechatronik.aux
+A level-1 auxiliary file: chapter/01_Cover.aux
+A level-1 auxiliary file: chapter/02_Introduction.aux
+I found no \citation commands---while reading file main.aux
+I found no \bibdata command---while reading file main.aux
 You've used 0 entries,
             2118 wiz_defined-function locations,
-            496 strings with 4007 characters,
+            498 strings with 4028 characters,
 and the built_in function-call counts, 18 in all, are:
 = -- 0
 > -- 0
