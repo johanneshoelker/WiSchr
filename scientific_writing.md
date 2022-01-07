@@ -7,4 +7,5 @@ R - Results
 a - and
 D - Discussion
     Summary and Prospects
-    
+
+vorwiegend Präsens und Passiv!
