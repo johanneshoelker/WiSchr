@@ -1,6 +1,29 @@
-\documentclass [11pt,letterpaper ,twoside ,openright ]{book}
+\documentclass [11pt, a4paper, oneside]{memoir}
+
+%Font: Arial
 \usepackage{helvet}
 \renewcommand{\familydefault}{\sfdefault}
-	
-\usepackage{natbib} % Required to change bibliography style to APA
-\bibliographystyle{plain}
+
+%Zeilenabstand:
+\usepackage{setspace}
+%TODO: \onehalfspacing funktioniert nicht
+
+%Abstände zum Rand:
+%TODO:
+%\setlrmargins{1in}{*}{*}
+%\setulmargins{0.6in}{0.6in}{*}
+
+%Umlaute erlauben
+%\usepackage[utf8]{inputenc
+
+%Inserting Images:
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+
+%For Highlighting Commands
+\usepackage{listings}
+\lstset{basicstyle=\tiny}
+
+%Bibliography: APA
+\usepackage{apacite}
+\bibliographystyle{apacite}
