@@ -2,13 +2,13 @@
 
 \begin{document}
 
+%\frontmatter
+\mainmatter
 \include{chapter/0_Deckblatt}
 \tableofcontents
-
-\frontmatter
 \include{chapter/1_Einleitung}
 
-\mainmatter
+\chapter{Schreibaufgaben}
 \include{Hausaufgaben/1_Warum_Mechatronik_studieren/Warum_Mechatronik_Johannes}
 \include{Hausaufgaben/2_Zukunftstechnologie/Technologie_Johannes}
 \include{Hausaufgaben/3_Elektromobilitaet/Elektromobilität_Johannes}
@@ -20,7 +20,9 @@
 \include{Hausaufgaben/9_Projektskizze_BA/6_Literaturverzeichnis}
 
 \include{chapter/3_Fazit_Reflexion}
+\backmatter
 \bibliography{bibs/portfolio.bib}
+\chapter{Anhang}
 %TODO: include raw documents im Anhang
 \includepdf[pages=-]{./Hausaufgaben/1_Warum_Mechatronik_studieren/Warum_Mechatronik_Johannes_Rohversion.pdf}
 \includepdf[pages=-]{./Hausaufgaben/2_Zukunftstechnologie/Technologie_Johannes_Rohversion.pdf}
