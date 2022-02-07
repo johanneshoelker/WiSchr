@@ -1,3 +1,17 @@
-\subsection{Textprobe}
+\subsection{Textprobe: Kapitel 2.2.2 Manipulatorsteuerung}
 %Ist der Text verständlich?
 %Einhaltung sprachlicher und formaler Standards
+% Definition Teleopreation:
+  Um einen Manipulator zu steuern kommen unterschiedliche Methoden in Frage.
+% Teach-In:
+  Beim weit verbreiteten Teach-In wird der Roboterarm händisch bewegt, die Trajektorien aufgezeichnet und anschließend abgespielt \cite[S.190]{ehlers_echtzeitfahige_2019}.\\\\
+  Befindet sich zwischen der Steuerungs- und anwendenden Umgebung eine Barriere sodass die steuernde Person physisch nicht in die ausführende Umgebung gelangen kann spricht man von Teleoperation \cite[S.741]{siciliano_springer_2008}.\\\\
+% shared und supervisory control:
+  In den meisten Anwendungsfällen der Teleoperation wird das Werkzeug am Ende der kinematischen Kette, der sogenannte Endeffektor \cite[S.8]{mareczek_grundlagen_2020}, direkt gesteuert und seine gewünschte Position wird bestimmt. Dies geschieht meist über einen Joystick oder mithilfe von haptischen Eingabegeräten \cite[S.190]{ehlers_echtzeitfahige_2019}. Aus der jeweiligen Position des Endeffektors ergeben sich die einzelnen Gelenkstellungen, was in mehrere Lösungen für dieselbe Position resultiert. Hier findet dann die inverse Kinematik Anwendung \cite[S.27]{siciliano_springer_2008}. Dazu wird auf der ausführenden Seite eine Steuerung benötigt, welche die nötigen Gelenkstellungen berechnet. Diese Form der Teleoperation wird überwachte Steuerung genannt. Das gegenteilige Extrem ist die direkte Steuerung, welches im Folgenden beschrieben wird. Wenn die Berechung auf beide Seiten aufgeteilt wird, spricht man von geteilter Steuerung \cite[S.746]{siciliano_springer_2008}. \\\\
+% direkte steuerung:
+  Bei der direkten Steuerung wird die gesamte Bewegung des Slaves vom Master kontrolliert und es befindet sich keine autonome Berechnung in der Remote-Umgebung \cite[S.746]{siciliano_springer_2008}.
+% unabhängige Gelenksteuerung:
+  Dabei wird jedes Gelenk einzeln und unabhängig voneinander als Einzeleingang-Einzelausgangs (SISO) Komponente bedient. Dies bringt einige Vorteile. Die Kommunikation zwischen den einzelnen Gelenken wird vermieden, die Bewegung ist skalierbar und es können günstigere Bauteile verwendet werden. \cite[S.137]{siciliano_springer_2008}\\\\
+  Die direkte Steuerung kann dabei von dem menschlichen Arm übernommen werden. Im Idealfall bewegt sich der Slave, also der Roboterarm, simultan zum Master, dem menschlichen Arm \cite[S.11]{mareczek_grundlagen_2020}. \\\\
+%Überleitung auf anthropomorphe Roboter
+  Bei einer solchen Remote-Steuerung ist nach \cite{tanie_mfi_2003} vorteilhaft, den Manipulator anthropomorph zu gestalten. Ebenso nennt er zwei weitere Gründe für die Nachahmung der menschlichen Gestalt bei der Konstruktion eines Roboters. Anthropomorphe Roboter lösen bei mit ihnen kollaborierenden Menschen Emotionen aus und können außerdem Geräte bedienen, welche für den Menschen konstruiert worden sind. Jedoch ist es in den meisten Fällen nachteilig, die menschliche Gestalt nachzuahmen und es genügt die für die Aufgabe nötigen Funktionen zu realisieren \cite{tanie_mfi_2003}. Die Nachahmung kann dabei sowohl optisch als auch kinematisch in unterschiedlichem Maß umgesetzt werden. Im folgenden Kapitel wird dazu auf die Grundlagen der Roboterkinematik eingegangen. \\\\
